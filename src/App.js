@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// import Folder_cmp from './dir_component/directory'
+// import File_cmp from './file_component/extension';
+// import { addData } from './api/add_data';
+// import { getData } from './api/get_data';
+// import { useState } from 'react'
+// import folder_image from './images/folder_img_02.png'
+// import file_image from './images/file_img_01.png'
 import './App.css';
+import Root from './dir_component/middle_ware';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Root />
     </div>
   );
 }
