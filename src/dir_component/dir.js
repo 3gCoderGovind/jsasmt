@@ -62,6 +62,7 @@ const Root_data_manager = ({ data }) => {
     
      {  isInput_Expanded_Folder?
         <li>
+        <img src={folder_img} class="folder_img_class"></img>  
         <input
           type="text"
           value={newFolderName}
@@ -72,6 +73,7 @@ const Root_data_manager = ({ data }) => {
      {   
           isInput_Expanded_File?
         <li>  
+        <img src={file_img} class='file_img_class'></img>  
         <input id={data.items.id}
          type="text"
           value={newFileName}
