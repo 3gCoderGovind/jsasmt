@@ -54,3 +54,19 @@
   height: 18px;
   margin-top: 5px;
 }
+.input_img_class{
+  height:30px;
+  width: 30px;
+  padding:10px;
+  position: relative;
+  bottom: 10px;
+}
+.input_div_class{
+  background-color: rgba(220, 220, 220, 0.559);
+  border: 0.1px black solid;
+  position: relative;
+  left: 33%;
+  width: 35%;
+  text-align: start;
+  height: 30px;
+}

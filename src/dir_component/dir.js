@@ -62,24 +62,33 @@ const Root_data_manager = ({ data }) => {
     
      {  isInput_Expanded_Folder?
         <li>
-        <img src={folder_img} class="folder_img_class"></img>  
+        <div class="input_div_class">
+        <img src={folder_img} class="input_img_class"></img>  
         <input
+          style={{position:"relative",bottom:"30px"}}
           type="text"
           value={newFolderName}
           onChange={(e) => setNewFolderName(e.target.value)}
           placeholder="Folder Name"
-        /></li>:''
+        />
+        </div>
+        </li>:''
      }
      {   
           isInput_Expanded_File?
-        <li>  
-        <img src={file_img} class='file_img_class'></img>  
+        <li> 
+       <div class="input_div_class">
+        <img src={file_img} class='input_img_class'></img>  
         <input id={data.items.id}
+         style={{position:"relative",bottom:"30px"}}
          type="text"
           value={newFileName}
           onChange={(e) => setNewFileName(e.target.value)}
           placeholder="File Name"
-        /></li>:''
+        />
+        </div>
+        </li>
+        :''
      }
 
        
